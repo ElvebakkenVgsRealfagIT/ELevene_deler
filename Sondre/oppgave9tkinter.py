@@ -36,10 +36,10 @@ class plotApp:
     Funksjoner:
     oppdater_plot(self)
         Oppdaterer plotet i vinduet
-    
+
     fiks_om_feil_tekstinput(self) -> tuple[float, float]
         Reseter inputen i tekstfeltene om den er feil og returnerer den minste og største x-verdien som skal vises på grafen
-    
+
     """
     def __init__(self, root, tittel:str, data:list[dict]):
         self.root = root
@@ -98,7 +98,7 @@ class plotApp:
         x_verdier = []
         y_verdier = []
         for element in self.data:
-            try:   
+            try:
                 # Sørger for at dataen er gyldig
                 if float(element[self.x_akse_nokkel]) >= min_x and float(element[self.x_akse_nokkel]) <=maks_x:
                     y_verdier.append(float(element[self.meny.valgt_verdi.get()]))
@@ -129,7 +129,7 @@ class plotApp:
             if maksimum_x_verdi <= float(self.data[0][self.x_akse_nokkel]) or maksimum_x_verdi > float(self.data[-1][self.x_akse_nokkel]):
                 self.til_entry.delete(0, tk.END)
                 self.til_entry.insert(0, self.data[-1][self.x_akse_nokkel])
-                maksimum_x_verdi = float(self.fra_aar_var.get())
+                maksimum_x_verdi = float(self.til_aar_var.get())
 
             # Reseter den minste x-verdien som skal vises på grafen om den er større eller lik den største x-verdien som skal vises
             if minimum_x_verdi >= maksimum_x_verdi:
