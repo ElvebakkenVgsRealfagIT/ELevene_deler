@@ -1,0 +1,49 @@
+<html>
+  <body>
+    <script src="uml.js"></script>
+      <div class="mermaid">
+    
+        classDiagram
+          class Input_felt {
+            PADDING : int
+            aktiv : bool
+            bredde : int
+            innhold
+            instanser : list
+            overskrift
+            tekst_ramme
+            x
+            y
+            aktiver(pos)
+            tegn(vindu, farge, keys)
+          }
+          class Knapp {
+            bredde : int
+            hoyde : int
+            instanser : list
+            rektangel
+            tekst
+            xPosisjon
+            yPosisjon
+            tegn(vindu, farge)
+          }
+          class Nedtrekksliste {
+            aktiv : bool
+            alternativer
+            bredde : int
+            hoyde : int
+            instanser : list
+            overskrift
+            rektangel
+            tekst
+            xPosisjon
+            yPosisjon
+            alternativRamme(i)
+            lengsteTekst()
+            tegn(vindu, farge)
+            visAlternativer(pos)
+          }
+  
+       </div>
+  </body>
+</html>
