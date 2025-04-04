@@ -1,7 +1,0 @@
-digraph "classes" {
-rankdir=BT
-charset="utf-8"
-"graf_knapp_klasser.Input_felt" [color="black", fontcolor="black", label=<{Input_felt|PADDING : int<br ALIGN="LEFT"/>aktiv : bool<br ALIGN="LEFT"/>bredde : int<br ALIGN="LEFT"/>innhold<br ALIGN="LEFT"/>instanser : list<br ALIGN="LEFT"/>overskrift<br ALIGN="LEFT"/>tekst_ramme<br ALIGN="LEFT"/>x<br ALIGN="LEFT"/>y<br ALIGN="LEFT"/>|aktiver(pos)<br ALIGN="LEFT"/>tegn(vindu, farge, keys)<br ALIGN="LEFT"/>}>, shape="record", style="solid"];
-"graf_knapp_klasser.Knapp" [color="black", fontcolor="black", label=<{Knapp|bredde : int<br ALIGN="LEFT"/>hoyde : int<br ALIGN="LEFT"/>instanser : list<br ALIGN="LEFT"/>rektangel<br ALIGN="LEFT"/>tekst<br ALIGN="LEFT"/>xPosisjon<br ALIGN="LEFT"/>yPosisjon<br ALIGN="LEFT"/>|tegn(vindu, farge)<br ALIGN="LEFT"/>}>, shape="record", style="solid"];
-"graf_knapp_klasser.Nedtrekksliste" [color="black", fontcolor="black", label=<{Nedtrekksliste|aktiv : bool<br ALIGN="LEFT"/>alternativer<br ALIGN="LEFT"/>bredde : int<br ALIGN="LEFT"/>hoyde : int<br ALIGN="LEFT"/>instanser : list<br ALIGN="LEFT"/>overskrift<br ALIGN="LEFT"/>rektangel<br ALIGN="LEFT"/>tekst<br ALIGN="LEFT"/>xPosisjon<br ALIGN="LEFT"/>yPosisjon<br ALIGN="LEFT"/>|alternativRamme(i)<br ALIGN="LEFT"/>lengsteTekst()<br ALIGN="LEFT"/>tegn(vindu, farge)<br ALIGN="LEFT"/>visAlternativer(pos)<br ALIGN="LEFT"/>}>, shape="record", style="solid"];
-}
