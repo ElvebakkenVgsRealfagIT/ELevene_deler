@@ -34,10 +34,11 @@ def plotter(x, y, type):
     elif type == "Gruppert stolpediagram":
         offset = 0.2
         x_arr = np.arange(len(x))
-        ax.barh(x_arr + offset, y[0], height = offset * 2)
-        ax.barh(x_arr - offset, y[1], height = offset * 2)
+        ax.barh(x_arr + offset, y[0], label = "Menn", height = offset * 2)
+        ax.barh(x_arr - offset, y[1], label = "Kvinner", height = offset * 2)
         ax.set_yticks(x_arr)
         ax.set_yticklabels(x)
+        ax.legend(loc = "upper right", fontsize = 8)
 
     plt.savefig(buf, format="PNG")
     buf.seek(0)
@@ -70,7 +71,6 @@ alle_tidsforbruk = [df["Tidsbruk 2000 I alt"][i] for i in alle_indekser]
 
 while run:
     pos = None
-
 
     for event in pg.event.get():
         if event.type == pg.QUIT:
