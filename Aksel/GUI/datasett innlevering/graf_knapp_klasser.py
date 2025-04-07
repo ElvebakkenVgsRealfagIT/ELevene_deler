@@ -40,7 +40,7 @@ class Knapp:
 
 class Nedtrekksliste:
     instanser = []
-    def __init__(self, xPosisjon, yPosisjon, alternativer, overskrift):
+    def __init__(self, xPosisjon, yPosisjon, alternativer, overskrift, bredde):
         Nedtrekksliste.instanser.append(self)
         self.xPosisjon = xPosisjon
         self.yPosisjon = yPosisjon
@@ -48,7 +48,7 @@ class Nedtrekksliste:
         self.aktiv = False
         self.overskrift = overskrift
         self.tekst = alternativer[0]
-        self.bredde = 150
+        self.bredde = bredde
         self.hoyde = 40
         self.rektangel = pg.Rect(
             self.xPosisjon, self.yPosisjon, self.bredde + 10, self.hoyde
