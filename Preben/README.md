@@ -1,5 +1,6 @@
 # Encrypted Python chat
 An encrypted chat in Python using AES and RSA.
+**This does not work with School laptops due to firewall restrictions. Can still be run locally or with a personal (non-restricted) computer.**
 
 ## Pip installations
 **This project uses Python 3.11**
