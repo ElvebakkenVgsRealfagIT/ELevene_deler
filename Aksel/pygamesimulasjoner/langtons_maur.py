@@ -1,6 +1,7 @@
 import pygame as pg
 import sys
 import os
+sys.path.append(os.path.abspath("../GUI klasser"))
 from pg_knapp_klasser import *
 import time as t
 
